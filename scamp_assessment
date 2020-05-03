@@ -1,0 +1,13 @@
+# write a function to output the fibbonacci sequence.
+
+def fibbonacci(num):
+    if num == 0:
+        return 0
+    elif num == 1:
+        return 1
+    else:
+        return fibbonacci(num -1)+fibbonacci(num-2)
+result = list(map(fibbonacci,range(0, 10)))
+print (result)
+
+
